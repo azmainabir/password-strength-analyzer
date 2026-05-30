@@ -12,7 +12,9 @@
 
 ## 🚀 Live Demo
 
-> Coming soon — deploying to Vercel
+**[Click here to view live app](https://password-strength-analyzer-iota.vercel.app/)**
+
+![App Screenshot](public/screenshot.png)
 
 ---
 
@@ -43,6 +45,16 @@ This is the same technique used by Google Chrome and Firefox.
 
 ---
 
+## 🧠 What I Learned
+
+- How SHA-1 hashing works in the browser using the Web Crypto API
+- k-Anonymity as a privacy-preserving technique used by Google and Firefox
+- How to debounce API calls to avoid rate limiting
+- Entropy calculation for measuring password randomness
+- Building custom React hooks to separate logic from UI
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer             | Technology         |
@@ -57,38 +69,38 @@ This is the same technique used by Google Chrome and Firefox.
 
 ## 📁 Project Structure
 
-```
 src/
 ├── components/
-│   ├── PasswordInput.jsx
-│   ├── StrengthMeter.jsx
-│   ├── BreachChecker.jsx
-│   └── PasswordGenerator.jsx
+│ ├── PasswordInput.jsx
+│ ├── StrengthMeter.jsx
+│ ├── BreachChecker.jsx
+│ └── PasswordGenerator.jsx
 ├── hooks/
-│   └── usePasswordAnalysis.js
+│ └── usePasswordAnalysis.js
 ├── utils/
-│   ├── entropy.js
-│   └── hibp.js
+│ ├── entropy.js
+│ └── hibp.js
 └── App.jsx
-```
 
 ---
 
 ## ⚙️ Run Locally
 
-```bash
-git clone https://github.com/YOUR_USERNAME/password-strength-analyzer
+git clone https://github.com/azmainabir/password-strength-analyzer
 cd password-strength-analyzer
 npm install
 npm run dev
-```
 
 ---
 
 ## 👨‍💻 Developer
 
-**Azmain Tahmid Abir**  
-CSE Student | Aspiring Data Scientist & Security Engineer
+**Azmain Tahmid Abir**
+CSE Student @ Daffodil International University
+On a mission to master Data Science · AI Engineering · Cyber Security · Software Development
+Every project here is built by hand — no shortcuts, no AI-generated code.
+
+[![GitHub](https://img.shields.io/badge/GitHub-azmainabir-181717?style=flat&logo=github)](https://github.com/azmainabir)
 
 ---
 
