@@ -16,7 +16,6 @@ export default function App() {
           "radial-gradient(ellipse at top, #0d1f0d 0%, #000000 70%)",
       }}
     >
-      {/* Hacker grid lines */}
       <div
         className="fixed inset-0 opacity-10 pointer-events-none"
         style={{
@@ -35,7 +34,6 @@ export default function App() {
             "0 0 30px rgba(0,255,65,0.15), inset 0 0 30px rgba(0,255,65,0.03)",
         }}
       >
-        {/* Header */}
         <div className="flex justify-between items-center">
           <div>
             <h1
@@ -60,10 +58,8 @@ export default function App() {
           </div>
         </div>
 
-        {/* Input */}
         <PasswordInput value={password} onChange={setPassword} />
 
-        {/* Analysis results */}
         {analysis && (
           <div className="space-y-4">
             <StrengthMeter score={analysis.score} />
@@ -149,10 +145,8 @@ export default function App() {
           </div>
         )}
 
-        {/* Generator */}
         <PasswordGenerator onUse={setPassword} />
 
-        {/* Footer */}
         <p
           className="text-xs text-center pt-2"
           style={{
@@ -161,7 +155,15 @@ export default function App() {
             fontFamily: "monospace",
           }}
         >
-          developed_by: Azmain Tahmid Abir
+          developed_by:{" "}
+          
+            href="https://www.linkedin.com/in/azmain-abir"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#00ff41", textDecoration: "underline" }}
+          <a>
+            Azmain Tahmid Abir
+          </a>
         </p>
       </div>
     </div>
