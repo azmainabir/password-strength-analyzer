@@ -24,7 +24,6 @@ export default function App() {
           backgroundSize: "40px 40px",
         }}
       />
-
       <div
         className="w-full max-w-md rounded-2xl p-6 space-y-5 relative"
         style={{
@@ -57,13 +56,10 @@ export default function App() {
             v1.0.0
           </div>
         </div>
-
         <PasswordInput value={password} onChange={setPassword} />
-
         {analysis && (
           <div className="space-y-4">
             <StrengthMeter score={analysis.score} />
-
             <div className="grid grid-cols-2 gap-3">
               <div
                 className="p-3 rounded-xl"
@@ -112,7 +108,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-
             {(analysis.warning || analysis.suggestions.length > 0) && (
               <div
                 className="p-3 rounded-xl"
@@ -140,13 +135,10 @@ export default function App() {
                 ))}
               </div>
             )}
-
             <BreachChecker count={breachCount} loading={breachLoading} />
           </div>
         )}
-
         <PasswordGenerator onUse={setPassword} />
-
         <p
           className="text-xs text-center pt-2"
           style={{
@@ -155,13 +147,13 @@ export default function App() {
             fontFamily: "monospace",
           }}
         >
-          developed_by:{" "}
-          
+          {"developed_by: "}
+          <a
             href="https://www.linkedin.com/in/azmain-abir"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#00ff41", textDecoration: "underline" }}
-          <a>
+            style={{ color: "#00ff41", textDecoration: "none" }}
+          >
             Azmain Tahmid Abir
           </a>
         </p>
